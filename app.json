@@ -1,1 +1,25 @@
-{"buildpacks":[{"url":"https://github.com/heroku/heroku-buildpack-nodejs.git"}],"description":"Queen MD Loader - loads the private Queen-Md repo and runs its bot","env":{"MONGODB_URL":{"description":"MongoDB connection string (bot ko pass hoga)","required":false},"QUEEN_MAIN_BRANCH":{"description":"Repo branch (khali chhoro to main use hogi)","required":false},"QUEEN_MAIN_REPO":{"description":"Private bot repo, format: owner/repo (khali chhoro to file wali CONFIG use hogi)","required":false}},"keywords":["QUEEN-MD"],"logo":"https://i.ibb.co/GfJZV3n2/53d7be98f55c.jpg","name":"QUEEN-MD-LOADER","stack":"heroku-24","success_url":"/"}
+{
+  "name": "QUEEN-MD",
+  "description": "Queen MD WhatsApp Bot Loader",
+  "logo": "https://i.ibb.co/GfJZV3n2/53d7be98f55c.jpg",
+  "keywords": ["QUEEN-BOT"],
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "MONGODB_URL": {
+      "description": "MongoDB connection string for database storage",
+      "required": false
+    },
+    "DB_NAME": {
+      "description": "Database name for MongoDB (default: Queen Md)",
+      "required": false,
+      "value": "Queen Md"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
