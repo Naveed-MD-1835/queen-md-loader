@@ -1,0 +1,1 @@
+{"dependencies":{"axios":"^1.6.0","express":"^4.18.1","unzipper":"^0.10.14"},"description":"Queen MD Loader - downloads the private Queen-Md repo zip and runs its index.js, with a status page","engines":{"node":">=18.0.0"},"main":"index.js","name":"queen-md-loader","scripts":{"start":"node index.js"},"version":"1.1.0"}
